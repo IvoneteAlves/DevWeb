@@ -1,44 +1,103 @@
-body{
-	background: #d2d2c1 url('imagens/fundo.png');
-	font: 16px Arial, Helvetica, sans-serif;
+/*Limpar formatoções padrões*/
+*{/*Aula 55 parte 1*/
+	margin: 0;
+	padding: 0;
+}
+body{/*Aula 55 parte 1*/
+	font-size: 1em;
+	font-family: "Trebuchet MS", Helvetica, sans-serif;
+	background: #E6E6E6;
 }
 
-#principal{
-	/*border: 1px solid red;*/dfrt7890 
-	width: 900px;/*largura*/
-	/*height: 500px; altura*/
-}
+/* Layout - Aula 55 parte 1*/
 
-#menu{
-	background: #c5c5b2;
-	padding: 18px;
+#area-cabecalho{/*Aula 55 parte 1*/
+	background: #F7B600;
+	padding: 15px;
+	text-align: center;
 }
-
-#conteudo{
-	background: #e8e8d9;
+#area-logo, #area-menu{/*Aula 55 parte 1*/
 	padding: 10px;
 }
+#area-principal{/* aula 56 Parte 2*/
+	width: 920px;
+	margin: 0 auto;
+	padding: 15px;/*Aula 57 parte 3*/
+}
+#area-postagens{/* aula 56 Parte 2*/
+	width: 660px;
+	float: left;
+}
+#area-lateral{/* aula 56 Parte 2*/
+	width: 240px;
+	float: right;
+}
+.postagem{/* aula 56 Parte 2*/
+	padding: 20px;
+	margin-bottom: 20px;
+	background: white;
+}
+.conteudo-lateral{
+	background: white;
+	padding: 10px;
+	margin-bottom: 20px;
+}
+.postagem-lateral{
+	font-size: 0.8em;
+	padding: 5px;
+	border-bottom: 1px dotted #CCC;
 
-#rodape{
+}
+#rodape{/* aula 56 Parte 2*/
+	clear: both;
 	text-align: center;
+	padding: 15px;
+	background: #ccc;	
 }
 
+/*Formatação do Menu Aula 55 parte 1*/
 a{
-	color: #4b566a; /* define a cor*/
-	text-decoration: none;/* sem underline no texto*/
-	font-weight: bold;/* intensidade das letras-negrito */
-	padding: 5px;/*espaçamento*/
+	text-decoration: none;  
+}
+a:link, a:visited{
+	color: #F7B600;
+}
+a:hover{/*hover passar o cursor link*/
+	text-decoration: underline;
 }
 
-/*.centralizar{
-	text-align: center;
-} usar classe em ponto especifico*/
-
-.img-campanha{
-	border: 10px solid #c3c3ae;
+#area-cabecalho a:link, #area-cabecalho a:visited{
+	color: #FFF;
+	padding: 8px 12px;
 }
+#area-cabecalho a:hover{/*hover passar o cursor link*/
+	color: #F7B600;
+	background: #FFF;
+	text-decoration: none;
+}
+
+/* Formatações Gerais Aula 55 parte 1*/
 
 h1{
-	color: #828271;
-	font-size: 1.2em;
+	color: #4E4E4E;
+	font-size: 2.5em;
+}
+h2{/*aula 57 parte 3*/
+	color: #f7b600;
+}
+h3{/*aula 57 parte 3*/
+	color: #565656;
+	background: #CCC;
+	padding: 5px;
+}
+
+.branco{
+	color: white;
+}
+.data-postagem{/*aula 57 parte 3*/
+	font-size: 0.8em;
+	border-bottom: 1px solid #f4f4f4;
+	padding-bottom: 10px;
+	margin-bottom: 10px;
+	display: block;
 }
